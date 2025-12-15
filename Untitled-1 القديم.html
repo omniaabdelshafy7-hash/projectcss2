@@ -1,0 +1,314 @@
+   <!-- start header -->
+     <header>
+      <div class="nav"> 
+       <div class="img"><img src="./img/logo.png" alt=""></div>
+       <nav> <ul>
+            <li>
+                <a href="Home">Home</a>
+            </li>
+             <li>
+                <a href="About">About</a>
+            </li>
+             <li>
+                <a href="Menu">Menu</a>
+            </li>
+             <li>
+                <a href="Gallary">Gallary</a>
+            </li>
+             <li>
+                <a href="Contact">Contact</a>
+            </li>
+        </ul></nav>
+    </div>
+        <div class="start">
+            <h1>Welcome To <span> Food Lover</span> Restaurant</h1>
+            <p>Here you can find Most delicacies food in the world</p>
+            <button>Book a Table</button>
+        </div>
+     </header>
+    <!-- end hrader -->
+     <!-- start about -->
+      <section class="about">
+            <div class="big">
+                <div class="first"><h1>The Food Lover history</h1><p>More than 25+ years of experience</p></div>
+                <div class="main">
+                    <div class="left">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quibusdam saepe natus numquam dolorum aliquam ducimus molestias tenetur? Quaerat, atque blanditiis. Debitis voluptatem sequi quibusdam nihil eveniet obcaecati soluta rem.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quibusdam saepe natus numquam dolorum aliquam ducimus molestias tenetur? Quaerat, atque blanditiis. Debitis voluptatem sequi quibusdam nihil eveniet obcaecati soluta rem.</p>
+                        <button><a href="">LEARN MORE</a></button>
+                    </div>
+                    <div class="right">
+                        <img src="./img/about_img.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end about -->
+
+        <!-- start offer -->
+         <section class="offer">
+            <div class="top">
+                <div class="one">
+                    <h1>Our Special Offers</h1>
+                    <p>More than 25+ years of experience</p>
+                </div>
+                <div class="two">
+                    <div>
+                        <img src="./img/offer1.png" alt="">
+                        <h1>Quattro Pasta</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Nam, quibusdam.</p>
+                        <p class="import"><del>$ 55.00</del> <span>$18.00</span></p>
+                    </div>
+                       <div>
+                        <img src="./img/offer2.png" alt="">
+                        <h1>Vegertarian Pasta</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Nam, quibusdam.</p>
+                        <p class="import"><del>$ 55.00</del> <span>$18.00</span></p>          
+          </div>
+                       <div>
+                        <img src="img/offer3.png" alt="">
+                        <h1>Gluten-Free Pasta</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br>elit. Nam, quibusdam.</p>
+                        <p class="import"><del>$ 55.00</del> <span>$18.00</span></p>         
+                      </div>
+                   </div>
+             </div>
+         </section>
+        <!-- end offer -->
+
+  
+  
+  
+  
+  
+  /* start header  */
+  header{
+    height: 100vh;
+    background: url(img/home_bg.jpeg) center center/cover no-repeat;
+    position: relative;
+  }
+  header .nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 7.5%;
+    align-items: center;
+  }
+  header .img img{
+    width: 80px;
+  }
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+ header nav ul li {
+  padding: 15px;
+  border-bottom: 1.9px solid transparent; 
+  transition: border-color 0.3s;
+}
+
+header nav ul li:hover {
+  border-color: rgb(228, 185, 91); /* بس نغيّر اللون وقت الـ hover */
+}
+
+
+  header nav ul li a{
+    text-decoration: none;
+    font-weight: 600px;
+    color: white;
+    font-family: Quicksand, sans-serif;
+  }
+  header .start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    font-family: Quicksand, sans-serif;
+    margin: 12px;
+  }
+  header .start h1 span{
+    color: rgb(228, 185, 91);
+  }
+    header .start h1 {
+        font-size: 40px;
+    }
+      header .start p{
+        margin: 20px 0px 40px;
+      }
+
+  header .start button{
+    width: 150px;
+    height: 55px;
+    border-radius: 14px;
+    border: white 1px solid;
+    background-color: transparent;
+    padding: 6px 10px;
+    transition: 0.3s;
+    color: white;
+  }
+    header .start button:hover{
+        background-color: rgb(228, 185, 91);
+
+    }
+    header::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width:100% ;
+        height: 100%;
+        background: rgb(0, 0, 0,0.6);
+    }
+    header *{
+        z-index: 10;
+        color: white;
+    }
+
+  /* end hrader */
+
+  /* start about */
+  .about{
+    height: 80vh;
+  }
+  .about .big .first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .about .big .first h1{
+    font-family: Quicksand, sans-serif;
+    color: rgb(56, 56, 72);
+    font-size: 40px;
+    margin-bottom: 2px;
+  }
+  .about .big .first p{
+    font-family: Quicksand, sans-serif;
+    color: rgb(154, 154, 154);
+    font-size: 14px;
+ }
+  .about .big .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+   margin: 0 auto; 
+   padding: 0 80px;    
+    
+  }
+  .about .big .main .left{
+    padding-right: 40px;
+  }
+  .about .big .main .left p{
+    line-height: 26px;
+    font-family: Quicksand, sans-serif;
+    font-size: 16px;
+    color: rgb(154, 154, 154);
+  }
+  .about .big .main .left button{
+     width: 150px;
+    height: 55px;
+    border-radius: 14px;
+    background-color:rgb(56, 56, 72) ;
+    padding: 6px 10px;
+    transition: 0.3s;
+    font-family: Quicksand, sans-serif;
+  }
+    .about .big .main .left button:hover{
+      background-color: rgb(228, 185, 91);
+      border: rgb(228, 185, 91) 1px solid;
+    }
+
+  .about .big .main .left button a{
+    text-decoration: none;
+    color: white;
+  }
+  .about .big .main .right{
+    width: 100%;
+  }
+  .about .big .main .right img{
+  width: 80%;
+  border-radius: 15px;
+  object-fit: cover;
+ }
+
+  /* end about */
+/* start offer */
+.offer {
+  background: url(./img/offer-background.jpg) center center/cover no-repeat;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  height: 80vh;
+}
+
+.offer .one h1 {
+  color: #e4b95b;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.offer .one p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.offer .two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  flex-wrap: wrap;
+}
+
+.offer .two div {
+  background: transparent;
+  text-align: center;
+  max-width: 350px;
+}
+
+.offer .two div img {
+  width: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.offer .two div img:hover {
+  transform: scale(1.05);
+}
+
+.offer .two div h1 {
+  font-size: 26px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.offer .two div p {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  
+}
+
+
+.offer .two div .import del {
+  color: #ccc;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.offer .two div .import span {
+  color: #e4b95b;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* end offer */
+
+
